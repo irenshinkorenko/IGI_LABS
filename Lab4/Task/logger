@@ -1,0 +1,101 @@
+OnResourceExecuting - 4/23/2018 8:39:49 PM
+Path - /
+OnResourceExecuted - 4/23/2018 8:39:52 PM
+=================
+OnResourceExecuting - 4/23/2018 8:39:52 PM
+OnResourceExecuting - 4/23/2018 8:39:52 PM
+Path - /Home/GetBrands
+OnResourceExecuted - 4/23/2018 8:39:52 PM
+=================
+OnResourceExecuting - 23-May-18 11:39:57 PM
+Path - /
+OnResourceExecuted - 23-May-18 11:39:59 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:03 PM
+Path - /Home/GetByName
+OnResourceExecuted - 23-May-18 11:40:04 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:05 PM
+Path - /Home/GetByName
+OnResourceExecuted - 23-May-18 11:40:05 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:07 PM
+Path - /Home/GetByQuantity
+OnResourceExecuted - 23-May-18 11:40:07 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:08 PM
+Path - /Doctor
+OnResourceExecuted - 23-May-18 11:40:08 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:08 PM
+Path - /Doctor/GetDepartments
+OnResourceExecuted - 23-May-18 11:40:08 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:09 PM
+Path - /Patient
+OnResourceExecuted - 23-May-18 11:40:09 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:09 PM
+Path - /Patient/GetDoctors
+OnResourceExecuted - 23-May-18 11:40:09 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:11 PM
+Path - /Patient/GetByName
+OnResourceExecuted - 23-May-18 11:40:11 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:12 PM
+Path - /Patient/GetByDoctor
+OnResourceExecuted - 23-May-18 11:40:12 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:13 PM
+Path - /Doctor
+OnResourceExecuted - 23-May-18 11:40:13 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:13 PM
+Path - /Doctor/GetDepartments
+OnResourceExecuted - 23-May-18 11:40:13 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:15 PM
+Path - /Doctor/GetByName
+OnResourceExecuted - 23-May-18 11:40:15 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:17 PM
+Path - /Doctor/GetByDepartment
+OnResourceExecuted - 23-May-18 11:40:17 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:19 PM
+Path - /Doctor/GetPage
+OnResourceExecuted - 23-May-18 11:40:19 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:20 PM
+Path - /Doctor/GetPage
+OnResourceExecuted - 23-May-18 11:40:20 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:21 PM
+Path - /Doctor/GetPage
+OnResourceExecuted - 23-May-18 11:40:21 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:22 PM
+Path - /Doctor/GetPage
+OnResourceExecuted - 23-May-18 11:40:22 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:26 PM
+Path - /Doctor/GetPage
+OnResourceExecuted - 23-May-18 11:40:26 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:31 PM
+Path - /Doctor/GetPage
+OnResourceExecuted - 23-May-18 11:40:31 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:33 PM
+Path - /Doctor/GetPage
+OnResourceExecuted - 23-May-18 11:40:33 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:33 PM
+Path - /Doctor/GetPage
+OnResourceExecuted - 23-May-18 11:40:33 PM
+=================
+OnResourceExecuting - 23-May-18 11:40:34 PM
+Path - /Doctor/GetPage
+OnResourceExecuted - 23-May-18 11:40:34 PM
+=================

@@ -1,0 +1,193 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Index</h2>
+
+<section>
+
+    <div class="edit">
+        <form class="FilterName">
+            <input class="form-control"
+                   id="Name"
+                   name="formString"
+                   type="text"
+                   value="@ViewData["nameSession"]" />
+            <input type="submit" class="apply" id="applyName" value="apply" />
+            <label for="Name">Filtering by patient name</label>
+        </form>
+
+        <form class="ByName" id="fn">
+            <select size="2" form="fn" class="ByName" name="firstSelectValue">
+                <option value="1">ASC</option>
+                <option value="2">DESC</option>
+            </select>
+            <input type="submit" id="applyByName" form="fn" value="apply" />
+            <label for="Cost">Sort by name</label>
+        </form>
+
+        <form class="FilterBrand" id="fq">
+            <select form="fq" class="ByDoctor" name="secondSelectValue" selected="1">
+                <option value="1">ASC</option>
+                <option value="2">DESC</option>
+            </select>
+            <input type="submit" class="apply" id="applyByDoctor" form="fq" value="apply" />
+            <label for="Client">Sort by doctor</label>
+        </form>
+
+
+        @*<form class="AddPatient">
+            Добавление новой записи <br>
+            <label for="Cost">Введите имя пациента</label>
+            <input class="AddName"
+                   id="AddName"
+                   name="DepartmentName"
+                   type="text" />
+            </br>
+            <label for="inputDate">Введите Rec. Date:</label>
+            <input type="date" id="recDateInput" class="form-control">
+            <label for="inputDate">Введите Disc. date:</label>
+            <input type="date" id="discDateInput" class="form-control">
+            <label for="Client">Doctor</label>
+            <select id="DoctorSelection"></select>
+
+            <input type="submit" id="addEntry" value="Добавить!" />
+        </form>
+
+        <form class="DelRent">
+            Удаление выбранных <br>
+            <input type="submit" id="delEntry" value="Удалить!" />
+        </form>
+
+        <form class="EditRent">
+            Изменение выбранной записи <br>
+            <input type="submit" id="editEntry" value="Изменить!" />
+        </form>*@
+
+    </div>
+
+
+    <div id="result"></div>
+
+</section>
+
+<script>
+
+
+          $('select.ByDoctor').val(@ViewData["OptionTwo"]);
+          $('select.ByName').val(@ViewData["OptionOne"]);
+
+
+
+    function getDoctors(doctors) { // обновление мест, где содержатся данные по брендам
+
+        $("#DoctorSelection").text("");
+
+        $.each(doctors, function (i) {
+            $('#DoctorSelection').append('<option> ' + this.fullName+ '</option>');
+        });
+    }
+
+          $('.edit').on('click', "#applyByDoctor", function (event) {
+             event.preventDefault();
+             var key = $('select.ByDoctor').prop('value');
+             key = encodeURIComponent(key);
+             var toPass = { Key: key };
+             $('#result').load('@Url.Action("GetByDoctor", "Patient")?key='+ key);
+          });
+
+
+         $('.edit').on('click', "#applyName", function (event) {
+            event.preventDefault();
+            var name = $('.FilterName').children('input').prop('value');
+            name = encodeURIComponent(name);
+            $('#result').load('@Url.Action("PatientName", "Patient")?Name='+ name);
+         });
+
+            $('.edit').on('click', "#applyByName", function (event) {
+            event.preventDefault();
+            var key = $('select.ByName').prop('value');
+            key = encodeURIComponent(key);
+            $('#result').load('@Url.Action("GetByName", "Patient")?key='+key);
+
+         });
+
+    $.getJSON("/Patient/GetDoctors", null, getDoctors);
+
+
+          $('.edit').on('click', "#addEntry", function (event) {
+
+              event.preventDefault();
+              if (($("#AddName").val() != "" )) {
+                 var entry =
+                     {
+                         'data1': $('#AddName').val(),
+                         'data2': $('#discDateInput').val(),
+                         'data3': $('#recDateInput').val(),
+                         'data4': $('#DoctorSelection').val()
+                     };
+                 $.post("/Patient/AddEntry", entry, null, "json");
+             }
+             else {
+                 alert('Поля не должны быть пусты!');
+             }
+    });
+
+    $('.edit').on('click', "#delEntry", function (event) {
+
+        event.preventDefault();
+        var IDs = "";
+        var list = document.getElementById("mytab").getElementsByTagName("tr");
+
+        for (var i = 0; i < list.length; ++i)
+        {
+            var deb = $(list[i]).children();
+            var flag = deb.find("#check").first().prop('checked');
+            if (flag == true) {
+                var tis = list[i].childNodes[9].textContent; // сохраняет ID в лист listetts для последующего удаления)
+                IDs += tis+ ";";
+                console.log(tis);
+            }
+        };
+        if (tis == undefined) {
+            alert('Поля не должны быть пусты!');
+        } else {
+            var entries =
+                {
+                    'data1': IDs
+                };
+            $.post("/Patient/Del", entries, location.reload(), "json");
+        }       
+    });
+
+
+    $('.edit').on('click', "#editEntry", function (event) {
+        event.preventDefault();
+        var IDs = "";
+        var list = document.getElementById("mytab").getElementsByTagName("tr");
+
+        for (var i = 0; i < list.length; ++i) {
+            var deb = $(list[i]).children();
+            var flag = deb.find("#radio").first().prop('checked');
+            if (flag == true) {
+                var tis = list[i].childNodes[9].textContent; // сохраняет ID в лист listetts для последующего удаления)
+
+                console.log(tis);
+            }
+        };
+        if (tis == undefined) {
+            alert('Поля не должны быть пусты!');
+        }
+        else
+        document.location.href = "/Patient/Edit?key="+tis;
+    });
+
+        $('#result').on('click', "#pager", function (event) {
+        event.preventDefault();
+          var page = $(this).val();
+          $('#result').empty();
+        $('#result').load('@Url.Action("GetPage", "Patient")?page='+page);
+    });
+
+
+</script>

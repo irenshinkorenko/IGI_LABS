@@ -1,0 +1,185 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Index</h2>
+
+<section>
+
+    <div class="edit">
+        <form class="FilterName">
+            <input class="form-control"
+                   id="Name"
+                   name="formString"
+                   type="text"
+                   value="@ViewData["nameSession"]" />
+            <input type="submit" class="apply" id="applyName" value="apply" />
+            <label for="Name">Filtering by patient name</label>
+        </form>
+
+        <form class="ByName" id="fn">
+            <select size="2" form="fn" class="ByName" name="firstSelectValue">
+                <option value="1">ASC</option>
+                <option value="2">DESC</option>
+            </select>
+            <input type="submit" id="applyByName" form="fn" value="apply" />
+            <label for="Cost">Sort by name</label>
+        </form>
+
+        <form class="FilterBrand" id="fq">
+            <select form="fq" class="ByDepartment" name="secondSelectValue" selected="1">
+                <option value="1">ASC</option>
+                <option value="2">DESC</option>
+            </select>
+            <input type="submit" class="apply" id="applyByDepartment" form="fq" value="apply" />
+            <label for="Client">Sort by department</label>
+        </form>
+
+
+        @*<form class="AddPatient">
+            Добавление новой записи <br>
+            <label for="Cost">Введите имя врача</label>
+            <input class="AddName"
+                   id="AddName"
+                   name="DepartmentName"
+                   type="text" />          
+            <select id="DepartmentSelection"></select>
+
+            <input type="submit" id="addEntry" value="Добавить!" />
+        </form>
+
+        <form class="DelRent">
+            Удаление выбранных <br>
+            <input type="submit" id="delEntry" value="Удалить!" />
+        </form>
+
+        <form class="EditRent">
+            Изменение выбранной записи <br>
+            <input type="submit" id="editEntry" value="Изменить!" />
+        </form>*@
+
+    </div>
+
+
+    <div id="result"></div>
+
+</section>
+
+<script>
+
+
+          $('select.ByDepartment').val(@ViewData["OptionTwo"]);
+          $('select.ByName').val(@ViewData["OptionOne"]);
+
+
+
+    function getDepartments(departments) { // обновление мест, где содержатся данные по брендам
+
+        $("#DepartmentSelection").text("");
+
+        $.each(departments, function (i) {
+            $('#DepartmentSelection').append('<option> ' + this.name+ '</option>');
+        });
+    }
+
+    $('.edit').on('click', "#applyByDepartment", function (event) {
+             event.preventDefault();
+             var key = $('select.ByDepartment').prop('value');
+             key = encodeURIComponent(key);
+             var toPass = { Key: key };
+             $('#result').load('@Url.Action("GetByDepartment", "Doctor")?key='+ key);
+          });
+
+
+         $('.edit').on('click', "#applyName", function (event) {
+            event.preventDefault();
+            var name = $('.FilterName').children('input').prop('value');
+            name = encodeURIComponent(name);
+            $('#result').load('@Url.Action("DoctorName", "Doctor")?Name='+ name);
+         });
+
+            $('.edit').on('click', "#applyByName", function (event) {
+            event.preventDefault();
+            var key = $('select.ByName').prop('value');
+            key = encodeURIComponent(key);
+            $('#result').load('@Url.Action("GetByName", "Doctor")?key='+key);
+
+         });
+
+    $.getJSON("/Doctor/GetDepartments", null, getDepartments);
+
+
+          $('.edit').on('click', "#addEntry", function (event) {
+
+              event.preventDefault();
+              if (($("#AddName").val() != "" )) {
+                 var entry =
+                     {
+                         'data1': $('#AddName').val(),                         
+                         'data4': $('#DepartmentSelection').val()
+                     };
+                  $.post("/Doctor/AddEntry", entry, null, "json");
+             }
+             else {
+                 alert('Поля не должны быть пусты!');
+             }
+    });
+
+    $('.edit').on('click', "#delEntry", function (event) {
+
+        event.preventDefault();
+        var IDs = "";
+        var list = document.getElementById("mytab").getElementsByTagName("tr");
+
+        for (var i = 0; i < list.length; ++i)
+        {
+            var deb = $(list[i]).children();
+            var flag = deb.find("#check").first().prop('checked');
+            if (flag == true) {
+                var tis = list[i].childNodes[5].textContent; // сохраняет ID в лист listetts для последующего удаления)
+                IDs += tis+ ";";
+                console.log(tis);
+            }
+        };
+        if (tis == undefined) {
+            alert('Поля не должны быть пусты!');
+        } else {
+            var entries =
+                {
+                    'data1': IDs
+                };
+            $.post("/Doctor/Del", entries, location.reload(), "json");
+        }
+    });
+
+
+    $('.edit').on('click', "#editEntry", function (event) {
+        event.preventDefault();
+        var IDs = "";
+        var list = document.getElementById("mytab").getElementsByTagName("tr");
+
+        for (var i = 0; i < list.length; ++i) {
+            var deb = $(list[i]).children();
+            var flag = deb.find("#radio").first().prop('checked');
+            if (flag == true) {
+                var tis = list[i].childNodes[5].textContent; // сохраняет ID в лист listetts для последующего удаления)
+
+                console.log(tis);
+            }
+        };
+        if (tis == undefined) {
+            alert('Поля не должны быть пусты!');
+        }
+        else
+            document.location.href = "/Doctor/Edit?key="+tis;
+    });
+
+        $('#result').on('click', "#pager", function (event) {
+        event.preventDefault();
+          var page = $(this).val();
+          $('#result').empty();
+        $('#result').load('@Url.Action("GetPage", "Doctor")?page='+page);
+    });
+
+
+</script>
