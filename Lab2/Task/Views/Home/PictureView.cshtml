@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewData["Title"] = "PictureView";
+}
+
+<h2>PictureView</h2>
+
+
+<img src="~/images/img.jpg" alt="ASP.NET" class="img-responsive" />
+
+
+
+<section>
+
+    <div class="edit">
+
+        <form class="FilterName">
+            <input class="form-control"
+                   id="Name"
+                   name="Name"
+                   type="text"
+                   value="" />
+            <input type="submit" class="apply" id="applyName" value="apply" />
+            <label for="Name">Part name</label>
+        </form>
+
+        <form class="FilterCost" id="fc">
+            <select size="2" id="costFilter" form="fc" class="cost">
+                <option value="1">ASC</option>
+                <option value="2">DESC</option>
+            </select>
+            <input type="submit" id="applyCost" form="fc" value="apply" />
+            <label for="Cost">1) Sort</label>
+        </form>
+
+        <form class="FilterClient" id="fcl">
+            <select form="fcl" class="client">
+                <option value="1">ASC</option>
+                <option value="2">DESC</option>
+            </select>
+            <input type="submit" class="apply" id="applyClient" form="fcl" value="apply" />
+            <label for="Client">2) sort</label>
+        </form>
+
+    </div>
+
+
+    <div id='result' class="result">
+
+    </div>
+
+</section>
+<script>
+    $(window).ready(function () {
+
+        $('.edit').on('click', "#applyCost", function (event) {
+            event.preventDefault();
+            var key = $('select.cost').prop('value');
+            key = encodeURIComponent(key);
+            $('#result').load('CostFilter?&key=' + key);
+        });
+
+        $('.edit').on('click', "#applyClient", function (event) {
+            event.preventDefault();
+            var key = $('select.client').prop('value');
+            key = encodeURIComponent(key);
+            $('#result').load('ClientFilter?&key=' + key);
+        });
+
+        $('.edit').on('click', "input#applyName", function (event) {
+            event.preventDefault();
+            var name = $('.FilterName').children('input.form-control').prop('value');
+            name = encodeURIComponent(name);
+            var toPass = { Name: name };
+            $.post("/Home/GetByPartName", toPass, FillResult, "json");
+
+        });
+
+        function FillResult(selection) {
+            $('#result').text("");
+            $('#result').append(' < table > <tr> <th>name</th>' +
+                '< th >full name</th >' +
+                '<th>name</th>' +
+                '<th>dep name</th>' +
+                '<th>quant</th>' +
+                '<th></th>' +
+                '</tr> ');
+
+            $.each(selection, function (i) {
+                $("#result").append(' <tr>' +
+                    ' <td>' + this.data1 + '</td>' +
+                    ' <td>' + this.data2 + '</td>' +
+                    ' <td>' + this.data3 + '</td>' +
+                    ' <td>' + this.data4 + '</td>' +
+
+                    ' </tr>');
+
+            });
+
+        }
+
+    });
+</script>

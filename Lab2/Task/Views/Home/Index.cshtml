@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<img src="~/images/img.jpg" alt="ASP.NET" class="img-responsive" />
+
+<section>
+    <div class="edit">
+    <form class="FilterName">
+        <input class="form-control"
+               id="Name"
+               name="Name"
+               type="text"
+               value="" />
+        <input type="submit" class="apply" id="applyName" value="apply" />
+        <label for="Name"> name filter</label>
+    </form>
+
+    <form class="FilterAuto" id="fa">
+        <select size="2" form="fc" class="auto">
+            <option value="1">ASC</option>
+            <option value="2">DESC</option>
+        </select>
+        <input type="submit" id="applyAuto" form="fc" value="apply" />
+        <label for="Cost">name Sort</label>
+    </form>
+
+    <form class="FilterBrand" id="fb">
+        <select form="fcl" class="Brand">
+            <option value="1">ASC</option>
+            <option value="2">DESC</option>
+        </select>
+        <input type="submit" class="apply" id="applyBrand" form="fcl" value="apply" />
+        <label for="Client">department sort</label>
+    </form>
+        </div>
+
+
+    <div id="result"></div>
+
+</section>
+
+<script>
+          $('.edit').on('click', "#applyBrand", function (event) {
+             event.preventDefault();
+             var key = $('select.Brand').prop('value');
+             key = encodeURIComponent(key);
+             var toPass = { Key: key };
+             $.post("/Home/GetByBrands", toPass, FillResult, "json");            
+          });
+
+         $('.edit').on('click', "#applyName", function (event) {
+            event.preventDefault();
+            var name = $('.FilterName').children('input').prop('value');
+            name = encodeURIComponent(name);
+            $('#result').load('@Url.Action("AutoNameFilter", "Home")?Name='+ name);
+         });
+
+         $('.edit').on('click', "#applyAuto", function (event) {
+            event.preventDefault();
+            var key = $('select.auto').prop('value');
+            key = encodeURIComponent(key);
+            $('#result').load('@Url.Action("AutoFilter", "Home")?key='+key);
+
+         });
+
+
+         function FillResult(selection) {
+             $('#result').text("");
+             $('#result').append(' < table > <tr> <th>name</th>'+
+                                '< th >full name</th >'+
+                                '<th>name</th>'+
+                                '<th>dep name</th>'+
+                                '<th>quant</th>' +
+                                '<th></th>' +
+                                '</tr> ');
+
+             $.each(selection, function (i) {
+                 $("#result").append(' <tr>' +
+                                     ' <td>' + this.data1 + '</td>' +
+                                     ' <td>' + this.data2 + '</td>' +
+                                     ' <td>' + this.data3 + '</td>' +
+                                     ' <td>' + this.data4 + '</td>' +
+               
+                                     ' </tr>');
+
+             });
+
+         }
+
+</script>

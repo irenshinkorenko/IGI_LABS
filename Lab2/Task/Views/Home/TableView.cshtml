@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "TableView";
+}
+
+<h2>TableView</h2>
+
+<section class="content">
+    <img src="~/images/img.jpg" alt="ASP.NET" class="img-responsive" />
+    <div class="edit">
+        <form class="FilterName">
+            Enter part of name :- @Html.TextBox("Id")
+            <input type="submit" class="apply" id="applyName" value="apply" />
+            @Html.Label("Part name")
+        </form>
+
+        <form class="FilterBrand">
+            Choose doc: - @Html.DropDownList("Brands", ViewBag.Brands as SelectList)
+            <input type="submit" class="apply" id="applyBrand" value="apply" />
+            @Html.Label("DOCS")
+        </form>
+
+        <form class="FilterClient">
+            Choose dep: - @Html.ListBox("Clients", ViewBag.Clients as SelectList)
+            <input type="submit" class="apply" id="applyClient" value="apply" />
+            @Html.Label("Departments")
+        </form>
+    </div>
+
+    <div id='result' class="result">
+
+    </div>
+</section>
+
+<script>
+    $(window).ready(function () {
+
+         $('.edit').on('click', "#applyBrand", function (event) {
+             event.preventDefault();
+             var brandname = $('.FilterBrand').children('select').prop('value');
+             brandname = encodeURIComponent(brandname);
+             $('#result').load('@Url.Action("TablePartial", "Home")?Name=' + brandname + '&key='+1);
+         });
+
+         $('.edit').on('click', "#applyName", function (event) {
+            event.preventDefault();
+            var name = $('.FilterName').children('input').prop('value');
+            name = encodeURIComponent(name);
+            var toPass = { Name: name };
+             $.post("/Home/GetByPartName", toPass, FillResult, "json");
+         });
+
+
+
+         $('.edit').on('click', "#applyClient", function (event) {
+            event.preventDefault();
+            var name = $('.FilterClient').children('select').prop('value');
+            name = encodeURIComponent(name);
+            $('#result').load('@Url.Action("TablePartial", "Home")?Name='+ name + '&key='+0);
+
+         });
+
+         function FillResult(selection) {
+             $('#result').text("");
+             $('#result').append(' < table > <tr> <th>name</th>' +
+                 '< th >full name</th >' +
+                 '<th>name</th>' +
+                 '<th>dep name</th>' +
+                 '<th>quant</th>' +
+                 '<th></th>' +
+                 '</tr> ');
+
+             $.each(selection, function (i) {
+                 $("#result").append(' <tr>' +
+                     ' <td>' + this.data1 + '</td>' +
+                     ' <td>' + this.data2 + '</td>' +
+                     ' <td>' + this.data3 + '</td>' +
+                     ' <td>' + this.data4 + '</td>' +
+
+                     ' </tr>');
+
+             });
+
+         }
+    });
+</script>

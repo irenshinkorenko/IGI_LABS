@@ -1,0 +1,44 @@
+D:\Study\New Semester\.Net Core\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.deps.json
+D:\Study\New Semester\.Net Core\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.runtimeconfig.json
+D:\Study\New Semester\.Net Core\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.runtimeconfig.dev.json
+D:\Study\New Semester\.Net Core\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.dll
+D:\Study\New Semester\.Net Core\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.pdb
+D:\Study\New Semester\.Net Core\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.csprojResolveAssemblyReference.cache
+D:\Study\New Semester\.Net Core\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.csproj.CoreCompileInputs.cache
+D:\Study\New Semester\.Net Core\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.AssemblyInfoInputs.cache
+D:\Study\New Semester\.Net Core\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.AssemblyInfo.cs
+D:\Study\New Semester\.Net Core\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.dll
+D:\Study\New Semester\.Net Core\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.pdb
+X:\Study\New Semester\.Net Core\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.deps.json
+X:\Study\New Semester\.Net Core\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.runtimeconfig.json
+X:\Study\New Semester\.Net Core\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.runtimeconfig.dev.json
+X:\Study\New Semester\.Net Core\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.dll
+X:\Study\New Semester\.Net Core\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.pdb
+X:\Study\New Semester\.Net Core\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.csprojResolveAssemblyReference.cache
+X:\Study\New Semester\.Net Core\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.csproj.CoreCompileInputs.cache
+X:\Study\New Semester\.Net Core\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.AssemblyInfoInputs.cache
+X:\Study\New Semester\.Net Core\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.AssemblyInfo.cs
+X:\Study\New Semester\.Net Core\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.dll
+X:\Study\New Semester\.Net Core\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.pdb
+C:\Users\iamnotjustice\Desktop\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.csprojAssemblyReference.cache
+C:\Users\iamnotjustice\Desktop\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.csproj.CoreCompileInputs.cache
+C:\Users\iamnotjustice\Desktop\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.AssemblyInfoInputs.cache
+C:\Users\iamnotjustice\Desktop\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.AssemblyInfo.cs
+C:\Users\iamnotjustice\Desktop\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.dll
+C:\Users\iamnotjustice\Desktop\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.pdb
+C:\Users\iamnotjustice\Desktop\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.deps.json
+C:\Users\iamnotjustice\Desktop\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.runtimeconfig.json
+C:\Users\iamnotjustice\Desktop\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.runtimeconfig.dev.json
+C:\Users\iamnotjustice\Desktop\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.dll
+C:\Users\iamnotjustice\Desktop\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.pdb
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.deps.json
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.runtimeconfig.json
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.runtimeconfig.dev.json
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.dll
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Lab2\Task\Task\bin\Debug\netcoreapp2.0\Task.pdb
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.csprojResolveAssemblyReference.cache
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.csproj.CoreCompileInputs.cache
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.AssemblyInfoInputs.cache
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.AssemblyInfo.cs
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.dll
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Lab2\Task\Task\obj\Debug\netcoreapp2.0\Task.pdb
