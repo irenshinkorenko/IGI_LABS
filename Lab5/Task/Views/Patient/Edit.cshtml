@@ -1,0 +1,59 @@
+﻿@model Lab5.Models.Patient
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2> EDIT </h2>
+
+<h2> EDIT ENTRY HERE </h2>
+
+<form class="editR">
+    Изменение записи записи <br>
+
+    <input class="EditPatient"
+           id="EditName"
+           name="DepartmentName"
+           type="text"
+           value="@ViewBag.Name" />
+    <label for="inputDate">Введите Rec. Date:</label>
+    <input type="date" id="recDateInput" class="form-control" value="@ViewBag.DateRec">
+    <label for="inputDate">Введите Disc. date:</label>
+    <input type="date" id="discDateInput" class="form-control" value="@ViewBag.DateDischarge">
+    @Html.DropDownList("DoctorSelection", (SelectList)ViewBag.Doctors)
+    <input type="submit" id="edit" value="Изменить!" />
+</form>
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<script>
+
+
+    $('.editR').on('click', "#edit", function (event) {
+        event.preventDefault();
+        var doc = $('#DoctorSelection').val();
+        var name = $("#EditName").val();
+        var recDate = $('#recDateInput').val();
+        var discDate = $('#discDateInput').val();
+        var id = @ViewBag.ID;
+
+        var entry=
+        {
+                'data1': id,
+                'data2': name,
+                'data3': discDate,
+                'data4': recDate,
+                'data5': doc
+        };
+        $.post("/Patient/EditEntry", entry, null, "json");
+        //document.location.href = "/Patient";
+    });
+</script>
+
+
+
+
+

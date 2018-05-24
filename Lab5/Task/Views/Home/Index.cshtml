@@ -1,0 +1,184 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Index</h2>
+
+
+
+<section>
+
+    <div class="edit">
+        <form class="FilterName">
+            <input class="form-control"
+                   id="Name"
+                   name="formString"
+                   type="text"
+                   value="@ViewData["nameSession"]" />
+            <input type="submit" class="apply" id="applyName" value="apply" />
+            <label for="Name">Filtering by department name</label>
+        </form>
+
+        <form class="ByName" id="fn">
+            <select size="2" form="fn" class="ByName" name="firstSelectValue">
+                <option value="1">ASC</option>
+                <option value="2">DESC</option>
+            </select>
+            <input type="submit" id="applyByName" form="fn" value="apply" />
+            <label for="Cost">Name sort</label>
+        </form>
+
+        <form class="FilterBrand" id="fq">
+            <select form="fq" class="Quant" name="secondSelectValue" selected="1">
+                <option value="1">ASC</option>
+                <option value="2">DESC</option>
+            </select>
+            <input type="submit" class="apply" id="applyByQuant" form="fq" value="apply" />
+            <label for="Client">quant sort</label>
+        </form>
+
+
+        <form class="AddDepartment">
+            Добавление новой записи <br>
+            <label for="AddDep">Department name</label>
+            <input class="AddDepartment"
+                   id="AddName"
+                   name="DepartmentName"
+                   type="text" />
+            <label for="AddDep">Places(quantity)</label>
+            <input class="AddDepartment"
+                   id="AddQuantity"
+                   name="DepartmentQuantity"
+                   type="text" />
+            <input type="submit" id="addEntry" value="Добавить!" />
+        </form>
+
+        <form class="DelRent">
+            Удаление выбранных <br>
+            <input type="submit" id="delEntry" value="Удалить!" />
+        </form>
+
+        <form class="EditRent">
+            Изменение выбранной записи <br>
+            <input type="submit" id="editEntry" value="Изменить!" />
+        </form>
+
+    </div>
+
+
+    <div id="result"></div>
+
+</section>
+
+<script>
+
+
+          $('select.Quant').val(@ViewData["OptionTwo"]);
+    $('select.ByName').val(@ViewData["OptionOne"]);
+
+
+
+
+
+          $('.edit').on('click', "#applyByQuant", function (event) {
+             event.preventDefault();
+             var key = $('select.Quant').prop('value');
+             key = encodeURIComponent(key);
+             var toPass = { Key: key };
+             $('#result').load('@Url.Action("GetByQuantity", "Home")?key='+ key);
+          });
+
+
+         $('.edit').on('click', "#applyName", function (event) {
+            event.preventDefault();
+            var name = $('.FilterName').children('input').prop('value');
+            name = encodeURIComponent(name);
+            $('#result').load('@Url.Action("DepartmentName", "Home")?Name='+ name);
+         });
+
+            $('.edit').on('click', "#applyByName", function (event) {
+            event.preventDefault();
+            var key = $('select.ByName').prop('value');
+            key = encodeURIComponent(key);
+            $('#result').load('@Url.Action("GetByName", "Home")?key='+key);
+
+         });
+
+
+
+
+          $('.edit').on('click', "#addEntry", function (event) {
+
+              event.preventDefault();
+              if (($("#AddName").val() != "" || $("#AddQuantity").val() != "")) {
+                 var entry =
+                     {
+                         'data1': $('#AddName').val(),
+                         'data2': $('#AddQuantity').val()
+                     };
+                 $.post("/Home/AddEntry", entry, null, "json");
+             }
+             else {
+                 alert('Поля не должны быть пусты!');
+             }
+    });
+
+    $('.edit').on('click', "#delEntry", function (event) {
+
+        event.preventDefault();
+        var IDs = "";
+        var list = document.getElementById("mytab").getElementsByTagName("tr");
+
+        for (var i = 0; i < list.length; ++i)
+        {
+            var deb = $(list[i]).children();
+            var flag = deb.find("#check").first().prop('checked');
+            if (flag == true) {
+                var tis = list[i].childNodes[5].textContent; // сохраняет ID в лист listetts для последующего удаления)        
+                IDs += tis;
+                console.log(tis);
+            }
+        };
+        if (tis == undefined) {
+            alert('Поля не должны быть пусты!');
+        } else {
+            var entries =
+                {
+                    'data1': IDs
+                };
+            $.post("/Home/Del", entries, null, "json");
+        }
+        location.reload();
+    });
+
+
+    $('.edit').on('click', "#editEntry", function (event) {
+        event.preventDefault();
+        var IDs = "";
+        var list = document.getElementById("mytab").getElementsByTagName("tr");
+
+        for (var i = 0; i < list.length; ++i) {
+            var deb = $(list[i]).children();
+            var flag = deb.find("#radio").first().prop('checked');
+            if (flag == true) {
+                var tis = list[i].childNodes[5].textContent; // сохраняет ID в лист listetts для последующего удаления)        
+
+                console.log(tis);
+            }
+        };
+        if (tis == undefined) {
+            alert('Поля не должны быть пусты!');
+        }
+        else       
+        document.location.href = "Home/Edit?key="+tis;      
+    });
+
+        $('#result').on('click', "#pager", function (event) {
+        event.preventDefault();
+          var page = $(this).val();
+          $('#result').empty();
+        $('#result').load('@Url.Action("GetPage", "Home")?page='+page);
+    });
+
+
+</script>

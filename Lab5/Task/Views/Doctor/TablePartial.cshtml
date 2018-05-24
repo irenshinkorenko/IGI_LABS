@@ -1,0 +1,34 @@
+﻿@using Lab5.Extensions
+@using Lab5
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@addTagHelper "*, Lab5"
+@model IEnumerable<Application.Controllers.SomeData>
+
+<table id="mytab">
+    <tr>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Пометка на удаление</th>
+        <th>Пометка на изменение</th>
+    </tr>
+    
+    @foreach (var s in Model)
+        {
+            <tr>
+                <td>@s.Data2</td>
+                <td>@s.Data3</td>
+                <td id="hiddenID" style="display:none">@s.Data1</td>
+                <td><input id="check" type="checkbox" value="on"></td>
+                <td><input name="kek" id="radio" type="radio" value="on"></td>
+            </tr>
+        }
+</table>
+@{
+    var i = 1;
+    while (i <= ViewBag.Count)
+    {
+        <numeric page="@i"></numeric>
+        i += 1;
+    }
+}

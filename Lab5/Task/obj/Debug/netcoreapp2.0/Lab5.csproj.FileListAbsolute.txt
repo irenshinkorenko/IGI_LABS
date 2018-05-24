@@ -1,0 +1,44 @@
+D:\Study\New Semester\.Net Core\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.deps.json
+D:\Study\New Semester\.Net Core\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.runtimeconfig.json
+D:\Study\New Semester\.Net Core\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.runtimeconfig.dev.json
+D:\Study\New Semester\.Net Core\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.dll
+D:\Study\New Semester\.Net Core\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.csproj.CoreCompileInputs.cache
+D:\Study\New Semester\.Net Core\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.AssemblyInfoInputs.cache
+D:\Study\New Semester\.Net Core\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.AssemblyInfo.cs
+D:\Study\New Semester\.Net Core\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.pdb
+D:\Study\New Semester\.Net Core\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.dll
+D:\Study\New Semester\.Net Core\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.pdb
+D:\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.deps.json
+D:\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.runtimeconfig.json
+D:\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.runtimeconfig.dev.json
+D:\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.dll
+D:\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.pdb
+D:\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.csprojResolveAssemblyReference.cache
+D:\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.csproj.CoreCompileInputs.cache
+D:\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.AssemblyInfoInputs.cache
+D:\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.AssemblyInfo.cs
+D:\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.dll
+D:\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.pdb
+D:\Study\New Semester\.Net Core\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.csprojAssemblyReference.cache
+C:\Users\iamnotjustice\Desktop\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.csproj.CoreCompileInputs.cache
+C:\Users\iamnotjustice\Desktop\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.AssemblyInfoInputs.cache
+C:\Users\iamnotjustice\Desktop\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.AssemblyInfo.cs
+C:\Users\iamnotjustice\Desktop\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.dll
+C:\Users\iamnotjustice\Desktop\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.pdb
+C:\Users\iamnotjustice\Desktop\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.deps.json
+C:\Users\iamnotjustice\Desktop\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.runtimeconfig.json
+C:\Users\iamnotjustice\Desktop\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.runtimeconfig.dev.json
+C:\Users\iamnotjustice\Desktop\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.dll
+C:\Users\iamnotjustice\Desktop\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.pdb
+C:\Users\iamnotjustice\Desktop\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.csprojAssemblyReference.cache
+C:\Users\Ирэн\Desktop\New folder\Ирина 5ая + инициализатор базы\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.dll
+C:\Users\Ирэн\Desktop\New folder\Ирина 5ая + инициализатор базы\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.pdb
+C:\Users\Ирэн\Desktop\New folder\Ирина 5ая + инициализатор базы\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.deps.json
+C:\Users\Ирэн\Desktop\New folder\Ирина 5ая + инициализатор базы\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.runtimeconfig.json
+C:\Users\Ирэн\Desktop\New folder\Ирина 5ая + инициализатор базы\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.runtimeconfig.dev.json
+C:\Users\Ирэн\Desktop\New folder\Ирина 5ая + инициализатор базы\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.dll
+C:\Users\Ирэн\Desktop\New folder\Ирина 5ая + инициализатор базы\Lab5\Task\Task\bin\Debug\netcoreapp2.0\Lab5.pdb
+C:\Users\Ирэн\Desktop\New folder\Ирина 5ая + инициализатор базы\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.csprojResolveAssemblyReference.cache
+C:\Users\Ирэн\Desktop\New folder\Ирина 5ая + инициализатор базы\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.csproj.CoreCompileInputs.cache
+C:\Users\Ирэн\Desktop\New folder\Ирина 5ая + инициализатор базы\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.AssemblyInfoInputs.cache
+C:\Users\Ирэн\Desktop\New folder\Ирина 5ая + инициализатор базы\Lab5\Task\Task\obj\Debug\netcoreapp2.0\Lab5.AssemblyInfo.cs

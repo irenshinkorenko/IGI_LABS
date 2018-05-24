@@ -1,0 +1,49 @@
+﻿@model Lab5.Models.Department
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ <h2> EDIT </h2>
+
+     <h2> EDIT ENTRY HERE </h2>
+
+     <form class="editR">
+         Изменение записи записи <br>
+         
+         <input class="EditDepartment"
+                id="EditName"
+                name="DepartmentName"
+                type="text"
+                value="@ViewBag.Name"/>
+         <input class="EditDepartment"
+                id="EditQuantity"
+                name="DepartmentQuantity"
+                type="text"
+                value="@ViewBag.Quant"/>
+         <input type="submit" id="addEntry" value="Добавить!" />
+     </form>
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<script>
+    $('.editR').on('click', "#edit", function (event) {
+        event.preventDefault();
+        var name = $('#Autos').val();
+        var quant = $('#Clients').val();
+        
+        var id = @ViewBag.ID;
+        var entry=
+        {
+                'data1': name,
+                'data2': quant,
+                'data3': id            
+        };
+        $.post("/Home/EditEntry", entry, null, "json");    
+        document.location.href = "/";
+    });
+</script>
+
