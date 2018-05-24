@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Application.Controllers.SomeData>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<table>
+    <tr>
+        <th>Cost</th>
+        <th>Brand</th>
+        <th>Client</th>
+        <th>Auto</th>
+        <th>Date</th>
+    </tr>
+    @foreach (var s in Model)
+    {
+    <tr>
+        <td>@s.Data1</td>
+        <td>@s.Data5</td>
+        <td>@s.Data2</td>
+        <td>@s.Data3</td>
+        <td>@s.Data4</td>
+    </tr>
+    }
+</table>

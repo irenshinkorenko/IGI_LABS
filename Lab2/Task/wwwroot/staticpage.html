@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Application</title>
+    <link rel="stylesheet" href="css/site.css" />
+
+    <title></title>
+</head>
+<body style="background-color: antiquewhite">
+
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <script>
+        $(window).ready(function () {
+
+            $('.edit').on('click', "#applyCost", function (event) {
+                event.preventDefault();
+                var key = $('select.cost').prop('value');
+                key = encodeURIComponent(key);
+                $('#result').load('Home/CostFilter?&key=' + key);
+            });
+
+            $('.edit').on('click', "#applyClient", function (event) {
+                event.preventDefault();
+                var key = $('select.client').prop('value');
+                key = encodeURIComponent(key);
+                $('#result').load('Home/ClientFilter?&key=' + key);
+            });
+
+            $('.edit').on('click', "input#applyName", function (event) {
+                event.preventDefault();
+                var name = $('.FilterName').children('input.form-control').prop('value');
+                name = encodeURIComponent(name);
+                var toPass = { Name: name };
+                $.post("/Home/GetByPartName", toPass, FillResult, "json");
+
+            });
+
+
+            function FillResult(selection) {
+                $('#result').text("");
+                $('#result').append(' < table >');
+
+                $.each(selection, function (i) {
+                    $("#result").append(' <tr>' +
+                        ' <td>' + this.data1 + '</td>' +
+                        ' <td>' + this.data2 + '</td>' +
+                        ' <td>' + this.data3 + '</td>' +
+                        ' <td>' + this.data4 + '</td>' +
+                        ' <td>' + this.data5 + '</td>' +
+                        ' </tr>');
+
+                });
+            }
+        });
+    </script>
+
+    <div class="bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <ul class="nav navbar-nav">
+                <li><a href="Home/Index">Home</a></li>
+                <li><a href="Home/PictureView">Picture</a></li>
+                <li><a href="Home/TableView">Table</a></li>
+            </ul>
+
+        </nav>
+    </div>
+    <h2>TableView</h2>
+    <img src="images/img.jpg" alt="ASP.NET" class="img-responsive" />
+    <section class="content">
+
+        <div class="edit">
+            <form class="FilterName">
+
+                <input class="form-control"
+                       id="Name"
+                       name="Name"
+                       type="text"
+                       value="" />
+                <input type="submit" class="apply" id="applyName" value="apply" />
+
+                <label for="Name">Part name</label>
+
+
+            </form>
+
+            <form class="FilterCost" id="fc">
+                <select size="2" id="costFilter" form="fc" class="cost">
+                    <option value="1">ASC</option>
+                    <option value="2">DESC</option>
+                </select>
+                <input type="submit" id="applyCost" form="fc" value="apply" />
+                <label for="Cost">Cost Sort</label>
+            </form>
+
+            <form class="FilterClient" id="fcl">
+                <select form="fcl" class="client">
+                    <option value="1">ASC</option>
+                    <option value="2">DESC</option>
+                </select>
+                <input type="submit" class="apply" id="applyClient" form="fcl" value="apply" />
+                <label for="Client">Client sort</label>
+            </form>
+
+        </div>
+
+        <div id='result' class="result">
+
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
