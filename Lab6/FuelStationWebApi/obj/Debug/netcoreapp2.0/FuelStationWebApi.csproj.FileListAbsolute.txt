@@ -1,0 +1,11 @@
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\FuelStationWebApi.deps.json
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\FuelStationWebApi.runtimeconfig.json
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\FuelStationWebApi.runtimeconfig.dev.json
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\FuelStationWebApi.dll
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\FuelStationWebApi.pdb
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\FuelStationWebApi.csprojResolveAssemblyReference.cache
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\FuelStationWebApi.csproj.CoreCompileInputs.cache
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\FuelStationWebApi.AssemblyInfoInputs.cache
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\FuelStationWebApi.AssemblyInfo.cs
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\FuelStationWebApi.dll
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\FuelStationWebApi.pdb

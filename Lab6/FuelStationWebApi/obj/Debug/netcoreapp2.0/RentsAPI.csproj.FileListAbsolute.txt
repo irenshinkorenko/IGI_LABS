@@ -1,0 +1,22 @@
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\RentsAPI.csprojResolveAssemblyReference.cache
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\RentsAPI.csproj.CoreCompileInputs.cache
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\RentsAPI.AssemblyInfoInputs.cache
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\RentsAPI.AssemblyInfo.cs
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\RentsAPI.deps.json
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\RentsAPI.runtimeconfig.json
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\RentsAPI.runtimeconfig.dev.json
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\RentsAPI.dll
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\RentsAPI.pdb
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\RentsAPI.dll
+D:\Study\New Semester\.Net Core\lab6\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\RentsAPI.pdb
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\RentsAPI.csprojAssemblyReference.cache
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\RentsAPI.csproj.CoreCompileInputs.cache
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\RentsAPI.AssemblyInfoInputs.cache
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\RentsAPI.AssemblyInfo.cs
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\RentsAPI.dll
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\RentsAPI.pdb
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\RentsAPI.deps.json
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\RentsAPI.runtimeconfig.json
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\RentsAPI.runtimeconfig.dev.json
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\RentsAPI.dll
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\RentsAPI.pdb

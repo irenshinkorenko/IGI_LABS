@@ -1,0 +1,32 @@
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\MedicalAPI.deps.json
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\MedicalAPI.runtimeconfig.json
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\MedicalAPI.runtimeconfig.dev.json
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\MedicalAPI.dll
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\MedicalAPI.pdb
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.csproj.CoreCompileInputs.cache
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.AssemblyInfoInputs.cache
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.AssemblyInfo.cs
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.dll
+C:\Users\iamnotjustice\Desktop\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.pdb
+C:\Users\Ирэн\Desktop\New folder\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\MedicalAPI.deps.json
+C:\Users\Ирэн\Desktop\New folder\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\MedicalAPI.runtimeconfig.json
+C:\Users\Ирэн\Desktop\New folder\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\MedicalAPI.runtimeconfig.dev.json
+C:\Users\Ирэн\Desktop\New folder\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\MedicalAPI.dll
+C:\Users\Ирэн\Desktop\New folder\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\MedicalAPI.pdb
+C:\Users\Ирэн\Desktop\New folder\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.csprojResolveAssemblyReference.cache
+C:\Users\Ирэн\Desktop\New folder\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.csproj.CoreCompileInputs.cache
+C:\Users\Ирэн\Desktop\New folder\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.AssemblyInfoInputs.cache
+C:\Users\Ирэн\Desktop\New folder\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.AssemblyInfo.cs
+C:\Users\Ирэн\Desktop\New folder\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.dll
+C:\Users\Ирэн\Desktop\New folder\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.pdb
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\MedicalAPI.deps.json
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\MedicalAPI.runtimeconfig.json
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\MedicalAPI.runtimeconfig.dev.json
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\MedicalAPI.dll
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\bin\Debug\netcoreapp2.0\MedicalAPI.pdb
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.csprojResolveAssemblyReference.cache
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.csproj.CoreCompileInputs.cache
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.AssemblyInfoInputs.cache
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.AssemblyInfo.cs
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.dll
+D:\Univer\3 курс\2 семестр\ИГИ\все лабы\Ирина 6ая\FuelStationWebApi-master\FuelStationWebApi-master\FuelStationWebApi\obj\Debug\netcoreapp2.0\MedicalAPI.pdb
